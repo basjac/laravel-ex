@@ -159,7 +159,7 @@ return [
         /*
         * Later added
         */
-        Collective\Html\HtmlServiceProvider::class,
+        // Collective\Html\HtmlServiceProvider::class,
         Zofe\Rapyd\RapydServiceProvider::class,
         Laracasts\Flash\FlashServiceProvider::class,
 
@@ -213,8 +213,8 @@ return [
       /*
       * Later toegevoegd
       */
-    'Form' => Collective\Html\FormFacade::class,
-    'Html' => Collective\Html\HtmlFacade::class,
+    // 'Form' => Collective\Html\FormFacade::class,
+    // 'Html' => Collective\Html\HtmlFacade::class,
 
 
     ],
