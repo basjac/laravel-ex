@@ -195,14 +195,7 @@
                 "path": "/health.php",
                 "port": 8080
               }
-            },
-            "livenessProbe": {
-              "timeoutSeconds": 3,
-              "initialDelaySeconds": 30,
-              "httpGet": {
-                "path": "/",
-                "port": 8080
-              }
+            }
             },
             "env": [{
               "name": "CLUSTER_NAME",
@@ -247,6 +240,15 @@
             }, {
               "name": "OPCACHE_REVALIDATE_FREQ",
               "value": "${OPCACHE_REVALIDATE_FREQ}"
+            }, {
+              "name": "CACHE_DRIVER",
+              "value": "file"
+            }, {
+              "name": "SESSION_DRIVER",
+              "value": "file"
+            }, {
+              "name": "DB_TIMEZONE",
+              "value": "Europe/Amsterdam"
             }],
             "resources": {
               "limits": {
